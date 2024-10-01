@@ -1,0 +1,17 @@
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.csproj.AssemblyReference.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.AssemblyInfoInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.AssemblyInfo.cs
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.csproj.CoreCompileInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Repository.deps.json
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Repository.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/ref/Repository.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Repository.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Context.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/bin/Debug/net6.0/Model.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.csproj.CopyComplete
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/ref/Repository.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Repository/obj/Debug/net6.0/Repository.pdb

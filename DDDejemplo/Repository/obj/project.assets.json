@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Context.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Context/1.0.0": {
+      "type": "project",
+      "path": "../Context/Context.csproj",
+      "msbuildProject": "../Context/Context.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Context >= 1.0.0",
+      "Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/felipe/.nuget/packages/": {}
@@ -31,7 +66,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/felipe/Documents/GitHub/DDDejemplo/Context/Context.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Context/Context.csproj"
+            },
+            "/home/felipe/Documents/GitHub/DDDejemplo/Model/Model.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Model/Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -54,6 +96,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

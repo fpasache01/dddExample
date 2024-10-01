@@ -13,11 +13,7 @@
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/WebApplication.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/ref/WebApplication.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/WebApplication.pdb
-/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/AutoMapper.dll
-/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/KellermanSoftware.Compare-NET-Objects.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Microsoft.OpenApi.dll
-/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Newtonsoft.Json.dll
-/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/nunit.framework.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Repository.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -30,3 +26,10 @@
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/obj/Debug/net6.0/ref/WebApplication.dll
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/obj/Debug/net6.0/WebApplication.pdb
 /home/felipe/Documents/GitHub/DDDejemplo/WebApplication/obj/Debug/net6.0/WebApplication.genruntimeconfig.cache
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Service.dll
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Service.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Repository.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Context.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/WebApplication/bin/Debug/net6.0/Model.pdb

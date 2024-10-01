@@ -1,11 +1,69 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Context.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Context": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Context/1.0.0": {
+      "type": "project",
+      "path": "../Context/Context.csproj",
+      "msbuildProject": "../Context/Context.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Context >= 1.0.0",
+      "Model >= 1.0.0",
+      "Repository >= 1.0.7.8"
+    ]
   },
   "packageFolders": {
     "/home/felipe/.nuget/packages/": {}
@@ -31,7 +89,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/felipe/Documents/GitHub/DDDejemplo/Context/Context.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Context/Context.csproj"
+            },
+            "/home/felipe/Documents/GitHub/DDDejemplo/Model/Model.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Model/Model.csproj"
+            },
+            "/home/felipe/Documents/GitHub/DDDejemplo/Repository/Repository.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Repository/Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -43,6 +111,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Repository": {
+            "target": "Package",
+            "version": "[1.0.7.8, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -54,6 +128,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

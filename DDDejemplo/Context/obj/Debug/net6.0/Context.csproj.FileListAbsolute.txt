@@ -1,0 +1,12 @@
+/home/felipe/Documents/GitHub/DDDejemplo/Context/bin/Debug/net6.0/Context.deps.json
+/home/felipe/Documents/GitHub/DDDejemplo/Context/bin/Debug/net6.0/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Context/bin/Debug/net6.0/ref/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Context/bin/Debug/net6.0/Context.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.csproj.AssemblyReference.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.AssemblyInfoInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.AssemblyInfo.cs
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.csproj.CoreCompileInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/ref/Context.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Context/obj/Debug/net6.0/Context.pdb

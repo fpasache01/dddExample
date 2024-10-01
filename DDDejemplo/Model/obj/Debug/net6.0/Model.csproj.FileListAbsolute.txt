@@ -1,0 +1,12 @@
+/home/felipe/Documents/GitHub/DDDejemplo/Model/bin/Debug/net6.0/Model.deps.json
+/home/felipe/Documents/GitHub/DDDejemplo/Model/bin/Debug/net6.0/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Model/bin/Debug/net6.0/ref/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Model/bin/Debug/net6.0/Model.pdb
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.csproj.AssemblyReference.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.AssemblyInfoInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.AssemblyInfo.cs
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.csproj.CoreCompileInputs.cache
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/ref/Model.dll
+/home/felipe/Documents/GitHub/DDDejemplo/Model/obj/Debug/net6.0/Model.pdb

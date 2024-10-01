@@ -2,24 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "AutoMapper/1.1.0.118": {
-        "type": "package",
-        "compile": {
-          "lib/AutoMapper.dll": {}
-        },
-        "runtime": {
-          "lib/AutoMapper.dll": {}
-        }
-      },
-      "CompareNETObjects/1.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/KellermanSoftware.Compare-NET-Objects.dll": {}
-        },
-        "runtime": {
-          "lib/KellermanSoftware.Compare-NET-Objects.dll": {}
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -38,39 +20,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        }
-      },
-      "Newtonsoft.Json/3.5.8": {
-        "type": "package",
-        "compile": {
-          "lib/35/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/35/Newtonsoft.Json.dll": {}
-        }
-      },
-      "NUnit/2.6.3": {
-        "type": "package",
-        "compile": {
-          "lib/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/nunit.framework.dll": {}
-        }
-      },
-      "Repository/1.0.7.8": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "(, )",
-          "CompareNETObjects": "(, )",
-          "NUnit": "2.6.3",
-          "Newtonsoft.Json": "(, )"
-        },
-        "compile": {
-          "lib/net45/Repository.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Repository.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/6.5.0": {
@@ -123,34 +72,65 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Context.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Context": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Context": "1.0.0",
+          "Model": "1.0.0",
+          "Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
   "libraries": {
-    "AutoMapper/1.1.0.118": {
-      "sha512": "Qn0aw2Oi7lmi3cu125XdrgBoGBCJj2YA9nXo50RMcg6UyWRfGV+EIhcfDT0MrVBMYDgWjQv5fWkf9MYwM52U3A==",
-      "type": "package",
-      "path": "automapper/1.1.0.118",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "automapper.1.1.0.118.nupkg.sha512",
-        "automapper.nuspec",
-        "lib/AutoMapper.dll"
-      ]
-    },
-    "CompareNETObjects/1.3.0": {
-      "sha512": "0cKXD/KZFK4En2/qZFTXMuHZgkhy9DxfqqyOB3hBtaQHVQ8Tz2NDqGVu/ABasqfzrw7A8qa570zro6Z7JHyPxg==",
-      "type": "package",
-      "path": "comparenetobjects/1.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "comparenetobjects.1.3.0.nupkg.sha512",
-        "comparenetobjects.nuspec",
-        "lib/KellermanSoftware.Compare-NET-Objects.dll"
-      ]
-    },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "type": "package",
@@ -399,52 +379,6 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Newtonsoft.Json/3.5.8": {
-      "sha512": "Xmri4q9s1NjuiBtOFkWMU9sUZdw5V7kFSf3CQQ3TlDyzWQHo94d5cHNxsSlnezGAZSPfdEG5k7bOrkzTe6rUOQ==",
-      "type": "package",
-      "path": "newtonsoft.json/3.5.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/20/Newtonsoft.Json.Net20.dll",
-        "lib/20/Newtonsoft.Json.Net20.pdb",
-        "lib/20/Newtonsoft.Json.Net20.xml",
-        "lib/35/Newtonsoft.Json.dll",
-        "lib/35/Newtonsoft.Json.pdb",
-        "lib/35/Newtonsoft.Json.xml",
-        "lib/SL/Newtonsoft.Json.Silverlight.dll",
-        "lib/SL/Newtonsoft.Json.Silverlight.pdb",
-        "lib/SL/Newtonsoft.Json.Silverlight.xml",
-        "newtonsoft.json.3.5.8.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
-    "NUnit/2.6.3": {
-      "sha512": "zGYW/N4U8H1Y6Xr6aGQZgaDtfpRJSlbx7A9Fg3WNUV3EKEUe1LwjnHw9NH81GVWYzKlOBLZmFp/q90YJwT2vzQ==",
-      "type": "package",
-      "path": "nunit/2.6.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/nunit.framework.dll",
-        "lib/nunit.framework.xml",
-        "license.txt",
-        "nunit.2.6.3.nupkg.sha512",
-        "nunit.nuspec"
-      ]
-    },
-    "Repository/1.0.7.8": {
-      "sha512": "CzhiiHQL/PA+UwjrhiGkRbQq0a430Xz9UOYbEb8oYSnqdcnh8FOxKUFedo4jRQQolpiq+2OxszT1VpwbJ2TWzA==",
-      "type": "package",
-      "path": "repository/1.0.7.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Repository.dll",
-        "repository.1.0.7.8.nupkg.sha512",
-        "repository.nuspec"
-      ]
-    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -534,11 +468,32 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Context/1.0.0": {
+      "type": "project",
+      "path": "../Context/Context.csproj",
+      "msbuildProject": "../Context/Context.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Repository >= 1.0.7.8",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -566,7 +521,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/felipe/Documents/GitHub/DDDejemplo/Repository/Repository.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Repository/Repository.csproj"
+            },
+            "/home/felipe/Documents/GitHub/DDDejemplo/Service/Service.csproj": {
+              "projectPath": "/home/felipe/Documents/GitHub/DDDejemplo/Service/Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -609,87 +571,5 @@
         "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.133/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1602",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Repository 1.0.7.8 does not provide an inclusive lower bound for dependency AutoMapper. An approximate best match of AutoMapper 1.1.0.118 was resolved.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1602",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Repository 1.0.7.8 does not provide an inclusive lower bound for dependency CompareNETObjects. An approximate best match of CompareNETObjects 1.3.0 was resolved.",
-      "libraryId": "CompareNETObjects",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1602",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Repository 1.0.7.8 does not provide an inclusive lower bound for dependency Newtonsoft.Json. An approximate best match of Newtonsoft.Json 3.5.8 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AutoMapper 1.1.0.118' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'CompareNETObjects 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CompareNETObjects",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 3.5.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NUnit 2.6.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NUnit",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Repository 1.0.7.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Repository",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
